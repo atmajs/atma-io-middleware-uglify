@@ -1,0 +1,14 @@
+{
+  "name": "atma-io-middleware-uglify",
+  "version": "1.0.19",
+  "description": "UglifyJS2 Middleware for Atma.IO and Atma.Toolkit",
+  "author": {
+    "name": "Alex Kit",
+    "url": "alex.kit@atmajs.com"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "uglify-js": "^2.4.24"
+  }
+}
