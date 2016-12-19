@@ -16,17 +16,18 @@ The Plugin extends:
 	This adds `atma-loader-babel` npm dependency and the `package.json` would look like:
     ```json
         {
-            "dependencies": {
-                "atma-loader-babel"
+            "devDependencies": {
+                "atma-io-middleware-uglify"
             },
             "atma": {
                 "plugins": [
-                    "atma-loader-babel"
+                    "atma-io-middleware-uglify"
                 ],
                 "settings": {
-					"atma-loader-babel": {
-						"extensions" : [ "es6" ]
-						"babel": {} // babel-compiler options
+					"atma-io-middleware-uglify": {
+						"minify" : true,
+						"defines": {} // override const variables,
+                        "uglify": {} // override uglify js options
 					}
                 }
             }
@@ -38,7 +39,7 @@ The Plugin extends:
     module.exports = {
         // other actions
         'compress': {
-            action: 'uglify',
+            action: 'atma-io-middleware-uglify',
             files: [ 'source/lib.js' ],
             output: 'release/',
 
