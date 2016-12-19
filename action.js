@@ -66,7 +66,7 @@ module.exports = {
 				io
 					.File
 					.middleware
-					.uglify(file, config);
+					['atma-io-middleware-uglify'](file, config);
 					
 					
 				var output = _output && _output[index];
