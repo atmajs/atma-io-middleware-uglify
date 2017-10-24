@@ -1,11 +1,13 @@
-module.exports = {
+const io = (<any>global).io;
+
+export default {
 	help: {
 		description: 'Compress javascript files',
 		args: {
 			files: '<string|array>'
 		}
 	},
-	process: function(config, done) {
+	process (config: any, done: Function) {
 
 		if (config.files == null) 
 			config.files = config.args;
