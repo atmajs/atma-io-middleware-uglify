@@ -2,7 +2,7 @@ import * as Base from 'atma-io-middleware-base'
 import process from './uglify'
 import action from './action'
 
-export default Base.create({
+export = Base.create({
     name: 'atma-io-middleware-uglify',
     textOnly: true,
     defaultOptions: {

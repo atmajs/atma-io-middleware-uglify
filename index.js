@@ -133,11 +133,10 @@ exports.default = {
 				// end:source ./templates/ModuleSimplified.js
 				
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var Base = require("atma-io-middleware-base");
 var uglify_1 = _src_uglify;
 var action_1 = _src_action;
-exports.default = Base.create({
+module.exports = Base.create({
     name: 'atma-io-middleware-uglify',
     textOnly: true,
     defaultOptions: {
